@@ -4,53 +4,53 @@
 
 A simple, single-screen React Native mobile application for staking xUSD tokens on the Algorand blockchain. Users either see their staked balance (if wallet connected) or a connect wallet button (if not connected). This plan focuses on the mobile app setup and design foundation.
 
-## Phase 1: Project Setup & Environment ✅ (COMPLETE)
+## Phase 1: Project Setup & Environment
 
-**Status:** React Native project fully initialized with TypeScript, all dependencies installed, NativeWind configured, and complete project structure created with core files.
+**Status:** In Progress - Basic Expo app created
 
 ### 1.1 React Native Project Initialization
 
-- [x] Initialize React Native project with TypeScript
-- [x] Configure development environment for iOS and Android
-- [x] Set up Metro bundler configuration (default)
-- [x] Configure NativeWind with Tailwind CSS
-- [x] Set up babel.config.js with NativeWind plugin
-- [x] Configure ESLint and Prettier for code formatting (default)
-- [x] Set up Git hooks for pre-commit linting
+- [x] Initialize React Native project with TypeScript (using Expo)
+- [ ] Configure development environment for iOS and Android
+- [ ] Set up Metro bundler configuration (default)
+- [ ] Configure NativeWind with Tailwind CSS
+- [ ] Set up babel.config.js with NativeWind plugin
+- [ ] Configure ESLint and Prettier for code formatting (default)
+- [ ] Set up Git hooks for pre-commit linting
 
 ### 1.2 Core Dependencies Installation
 
-- [x] Add NativeWind for utility-first styling (Tailwind CSS for React Native)
-- [x] Install state management (Zustand) for wallet/balance state
-- [x] Install async storage for local data persistence
-- [x] Add vector icons (react-native-vector-icons)
-- [x] Install TypeScript types for vector icons
-- [x] Install development tools (included in base project)
-- [x] Add haptic feedback library for button interactions
+- [ ] Add NativeWind for utility-first styling (Tailwind CSS for React Native)
+- [ ] Install state management (Zustand) for wallet/balance state
+- [ ] Install async storage for local data persistence
+- [ ] Add vector icons (react-native-vector-icons)
+- [ ] Install TypeScript types for vector icons
+- [ ] Install development tools (included in base project)
+- [ ] Add haptic feedback library for button interactions
 
 ### 1.3 Project Structure Setup
 
-- [x] Create src/ directory structure
-- [x] Create components/ directory for reusable UI components
-- [x] Create store/ directory for state management
-- [x] Create types/ directory for TypeScript definitions
-- [x] Create utils/ directory for helper functions
-- [x] Create hooks/ directory for custom React hooks
-- [x] Create constants/ directory for app constants
-- [x] Create styles/ directory for styling utilities
-- [x] Create assets/ directory for images, fonts, etc.
-- [x] Create and configure tailwind.config.js
-- [x] Configure metro.config.js for NativeWind
-- [x] Configure babel.config.js for NativeWind
+- [ ] Create src/ directory structure
+- [ ] Create components/ directory for reusable UI components
+- [ ] Create store/ directory for state management
+- [ ] Create types/ directory for TypeScript definitions
+- [ ] Create utils/ directory for helper functions
+- [ ] Create hooks/ directory for custom React hooks
+- [ ] Create constants/ directory for app constants
+- [ ] Create styles/ directory for styling utilities
+- [ ] Create assets/ directory for images, fonts, etc.
+- [ ] Create and configure tailwind.config.js
+- [ ] Configure metro.config.js for NativeWind
+- [ ] Configure babel.config.js for NativeWind
 
 ## Phase 2: Design System & UI Foundation
 
 ### 2.1 Design System Creation with NativeWind
 
-- [x] Configure NativeWind and Tailwind CSS setup
+- [ ] Configure NativeWind and Tailwind CSS setup
 - [ ] Define custom color palette in tailwind.config.js
-- [x] Create typography scale and font families in Tailwind config
-- [x] Set up spacing and layout utilities
+- [ ] Create typography scale and font families in Tailwind config
+- [ ] Set up spacing and layout utilities
 - [ ] Create reusable styled components using NativeWind utilities
 - [ ] Design iconography system with react-native-vector-icons
 - [ ] Create loading states and animations with NativeWind classes
