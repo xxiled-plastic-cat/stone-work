@@ -1,11 +1,11 @@
 import { createTheme } from '@shopify/restyle';
 
-// Define all 5 color themes from the CSV
+// Define all 4 color themes from the CSV
 export const colorThemes = {
   lightPink: {
-    background: '#FDEEF4',
-    backgroundDarker: '#F8D3E1',
-    backgroundLighter: '#FFFFFF',
+    background: '#F5D7E3',
+    backgroundDarker: '#E8C2D1',
+    backgroundLighter: '#FBE8F0',
     headerText: '#4A2F35',
     bodyText: '#6E4A50',
     error: '#E53935',
@@ -30,16 +30,6 @@ export const colorThemes = {
     bodyText: '#424242',
     error: '#D32F2F',
     loading: '#EEEEEE',
-    success: '#388E3C',
-  },
-  granite: {
-    background: '#757575',
-    backgroundDarker: '#5F5F5F',
-    backgroundLighter: '#9E9E9E',
-    headerText: '#F5F5F5',
-    bodyText: '#E0E0E0',
-    error: '#C62828',
-    loading: '#BDBDBD',
     success: '#388E3C',
   },
   obsidian: {
@@ -91,23 +81,27 @@ const theme = createTheme({
   },
   textVariants: {
     header: {
+      fontFamily: 'PlayfairDisplay_600SemiBold',
       fontWeight: 'bold',
       fontSize: 34,
       lineHeight: 42.5,
       color: 'headerText',
     },
     subheader: {
+      fontFamily: 'PlayfairDisplay_600SemiBold',
       fontWeight: '600',
       fontSize: 28,
       lineHeight: 36,
       color: 'headerText',
     },
     body: {
+      fontFamily: 'Montserrat_400Regular',
       fontSize: 16,
       lineHeight: 24,
       color: 'bodyText',
     },
     caption: {
+      fontFamily: 'Montserrat_400Regular',
       fontSize: 12,
       lineHeight: 16,
       color: 'bodyText',
@@ -156,23 +150,27 @@ export const createThemeWithColors = (themeName: ThemeName) => {
     },
     textVariants: {
       header: {
+        fontFamily: 'PlayfairDisplay_600SemiBold',
         fontWeight: 'bold',
         fontSize: 34,
         lineHeight: 42.5,
         color: 'headerText',
       },
       subheader: {
+        fontFamily: 'PlayfairDisplay_600SemiBold',
         fontWeight: '600',
         fontSize: 28,
         lineHeight: 36,
         color: 'headerText',
       },
       body: {
+        fontFamily: 'Montserrat_400Regular',
         fontSize: 16,
         lineHeight: 24,
         color: 'bodyText',
       },
       caption: {
+        fontFamily: 'Montserrat_400Regular',
         fontSize: 12,
         lineHeight: 16,
         color: 'bodyText',

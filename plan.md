@@ -45,10 +45,17 @@ A simple, single-screen React Native mobile application for staking xUSD tokens 
 - [x] Configure Restyle theme and styled components
 - [x] Define custom color palette in Restyle theme
 - [x] Create typography scale and font families in Restyle theme
+- [x] Add custom fonts: Playfair Display (serif) for headings, Montserrat (sans-serif) for body
 - [x] Set up spacing and layout utilities
 - [x] Create reusable styled components using Restyle
 - [x] Create first styled component: ThemeSwitcherButton
-- [ ] Design iconography system with react-native-vector-icons
+- [x] Organize components in dedicated directory structure
+- [x] Create SavingsBalance component with neumorphic styling
+- [x] Integrate SVG icon support and replace text with xUSD icon
+- [x] Create ActionButton component with image parameter support
+- [x] Create IconActionButton component with FontAwesome icons
+- [x] Add plus and minus action buttons with space-between layout
+- [x] Design iconography system with react-native-vector-icons
 - [ ] Create loading states and animations with Restyle
 
 ### 2.2 Theme Configuration
@@ -108,8 +115,8 @@ App States:
 
 - [ ] **Wallet Disconnected State**: Clean, welcoming connect wallet UI
 - [ ] **Wallet Connected State**: Staked balance display with action buttons
-- [ ] **Balance Display**: Large, clear xUSD staked amount
-- [ ] **Action Buttons**: Add to stake and unstake buttons
+- [x] **Balance Display**: Large, clear xUSD staked amount
+- [x] **Action Buttons**: Add to stake and unstake buttons
 - [ ] **Loading States**: Smooth loading indicators for transactions
 - [ ] **Error States**: User-friendly error messages
 
