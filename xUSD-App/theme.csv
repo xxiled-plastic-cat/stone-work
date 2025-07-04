@@ -1,0 +1,50 @@
+. Light Pink Theme
+Token	Hex	Notes
+Background	#FDEEF4	very soft rose tint
+Background (darker)	#F8D3E1	subtle contrast for panels/borders
+Background (lighter)	#FFFFFF	for cards, overlays
+Header Text	#4A2F35	deep mauve, good contrast on pink
+Body Text	#6E4A50	slightly softer than header
+Error	#E53935	warm, saturated red
+Loading (info)	#FFCDD2	pastel coral for spinners/placeholders
+Success	#66BB6A	gentle mint-green for positive states
+2. Terracotta Theme
+Token	Hex	Notes
+Background	#E2725B	true terracotta clay
+Background (darker)	#C05C4A	more earthy for depth or hover states
+Background (lighter)	#F1A087	peachy highlight for cards
+Header Text	#3E231E	rich brown, anchors the warm tone
+Body Text	#5E3D36	softer brownish-grey for readability
+Error	#B71C1C	deep brick red
+Loading (info)	#F8B4A8	muted salmon for progress indicators
+Success	#81C784	leafy green that pops against terracotta
+3. Grey Theme
+Token	Hex	Notes
+Background	#E0E0E0	neutral light grey
+Background (darker)	#BDBDBD	for cards, dividers
+Background (lighter)	#F5F5F5	alternate panels
+Header Text	#212121	charcoal for strong typography
+Body Text	#424242	softened black for body copy
+Error	#D32F2F	classic Material red
+Loading (info)	#EEEEEE	very pale grey spinner/bg
+Success	#388E3C	standard Material green
+4. Granite Theme
+Token	Hex	Notes
+Background	#757575	mid-grey “granite”
+Background (darker)	#5F5F5F	for raised/pressed states
+Background (lighter)	#9E9E9E	for highlights or sections
+Header Text	#F5F5F5	off-white for contrast on grey
+Body Text	#E0E0E0	light grey copy
+Error	#C62828	bold crimson
+Loading (info)	#BDBDBD	medium grey loader
+Success	#388E3C	crisp green
+5. Obsidian Theme
+Token	Hex	Notes
+Background	#1A1A1A	almost-black
+Background (darker)	#0F0F0F	for modals, overlays
+Background (lighter)	#2E2E2E	for cards or raised surfaces
+Header Text	#FFFFFF	pure white for max contrast
+Body Text	#CCCCCC	soft white for comfortable reading
+Error	#EF5350	vivid coral red
+Loading (info)	#424242	dark grey spinner/bg
+Success	#66BB6A	bright mint

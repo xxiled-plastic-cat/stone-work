@@ -6,21 +6,16 @@ A simple, single-screen React Native mobile application for staking xUSD tokens 
 
 ## Phase 1: Project Setup & Environment
 
-**Status:** In Progress - Basic Expo app created
+**Status:** In Progress - Expo app with Restyle styling and 5 color themes configured
 
 ### 1.1 React Native Project Initialization
 
 - [x] Initialize React Native project with TypeScript (using Expo)
-- [ ] Configure development environment for iOS and Android
-- [ ] Set up Metro bundler configuration (default)
-- [ ] Configure NativeWind with Tailwind CSS
-- [ ] Set up babel.config.js with NativeWind plugin
-- [ ] Configure ESLint and Prettier for code formatting (default)
-- [ ] Set up Git hooks for pre-commit linting
+
 
 ### 1.2 Core Dependencies Installation
 
-- [ ] Add NativeWind for utility-first styling (Tailwind CSS for React Native)
+- [x] Add Restyle for type-safe styling system (instead of NativeWind)
 - [ ] Install state management (Zustand) for wallet/balance state
 - [ ] Install async storage for local data persistence
 - [ ] Add vector icons (react-native-vector-icons)
@@ -45,29 +40,37 @@ A simple, single-screen React Native mobile application for staking xUSD tokens 
 
 ## Phase 2: Design System & UI Foundation
 
-### 2.1 Design System Creation with NativeWind
+### 2.1 Design System Creation with Restyle
 
-- [ ] Configure NativeWind and Tailwind CSS setup
-- [ ] Define custom color palette in tailwind.config.js
-- [ ] Create typography scale and font families in Tailwind config
-- [ ] Set up spacing and layout utilities
-- [ ] Create reusable styled components using NativeWind utilities
+- [x] Configure Restyle theme and styled components
+- [x] Define custom color palette in Restyle theme
+- [x] Create typography scale and font families in Restyle theme
+- [x] Set up spacing and layout utilities
+- [x] Create reusable styled components using Restyle
+- [x] Create first styled component: ThemeSwitcherButton
 - [ ] Design iconography system with react-native-vector-icons
-- [ ] Create loading states and animations with NativeWind classes
+- [ ] Create loading states and animations with Restyle
 
 ### 2.2 Theme Configuration
 
-- [ ] Implement dark/light theme support using NativeWind's dark mode
-- [ ] Configure theme variants in tailwind.config.js
-- [ ] Create theme provider and context for dynamic theme switching
-- [ ] Define theme-aware utility classes and components
+- [x] Implement multiple color theme support (5 themes: Light Pink, Terracotta, Grey, Granite, Obsidian)
+- [x] Configure theme variants in Restyle configuration
+- [x] Create theme provider and context for dynamic theme switching
+- [x] Define theme-aware utility classes and components
 - [ ] Add system theme detection and automatic switching
 
-### 2.3 Responsive Design Setup
+### 2.3 Theme Demo & Testing
 
-- [ ] Configure NativeWind responsive utilities and breakpoints
-- [ ] Create device-specific utility classes in Tailwind config
-- [ ] Implement responsive design patterns using NativeWind breakpoints
+- [x] Create interactive theme switcher demo
+- [x] Test all 5 color themes (Light Pink, Terracotta, Grey, Granite, Obsidian)
+- [x] Verify theme switching works correctly
+- [x] Test typography variants across themes
+
+### 2.4 Responsive Design Setup
+
+- [x] Configure Restyle responsive utilities and breakpoints
+- [ ] Create device-specific utility classes in Restyle config
+- [ ] Implement responsive design patterns using Restyle breakpoints
 - [ ] Test responsive behavior on various device sizes (iPhone SE to iPad)
 
 ## Phase 3: Core App Architecture
