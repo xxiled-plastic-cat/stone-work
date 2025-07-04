@@ -47,10 +47,10 @@ A simple, single-screen React Native mobile application for staking xUSD tokens 
 
 ### 2.1 Design System Creation with NativeWind
 
-- [ ] Configure NativeWind and Tailwind CSS setup
+- [x] Configure NativeWind and Tailwind CSS setup
 - [ ] Define custom color palette in tailwind.config.js
-- [ ] Create typography scale and font families in Tailwind config
-- [ ] Set up spacing and layout utilities
+- [x] Create typography scale and font families in Tailwind config
+- [x] Set up spacing and layout utilities
 - [ ] Create reusable styled components using NativeWind utilities
 - [ ] Design iconography system with react-native-vector-icons
 - [ ] Create loading states and animations with NativeWind classes
