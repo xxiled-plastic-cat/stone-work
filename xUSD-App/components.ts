@@ -15,4 +15,5 @@ export { PageTitle } from './components/PageTitle';
 export { SavingsBalance } from './components/SavingsBalance';
 export { IconActionButton } from './components/IconActionButton';
 export { TransactionItem } from './components/TransactionItem';
-export { TransactionList } from './components/TransactionList'; 
+export { TransactionList } from './components/TransactionList';
+export { AuthScreen } from './components/AuthScreen'; 

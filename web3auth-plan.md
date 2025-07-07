@@ -1,7 +1,7 @@
-# Web3Auth Integration Plan for xUSD React Native App
+# Web3Auth Integration Plan for Haven React Native App
 
 ## Overview
-This document outlines the integration strategy for implementing Web3Auth social login with Algorand wallet generation in the xUSD React Native app, based on a proven implementation from another Algorand app.
+This document outlines the integration strategy for implementing Web3Auth social login with Algorand wallet generation in the Haven React Native app, based on a proven implementation from another Algorand app.
 
 ## Current Web3Auth Status
 - **Acquisition**: Web3Auth has been acquired by Consensys Software Inc. ([Web3Auth](https://web3auth.io/))
@@ -100,7 +100,7 @@ export const connectWeb3Auth = async (
   idToken: string,
   verifierId: string,
 ): Promise<void> => {
-  const verifier = 'xusd-verifier' // Your verifier name from Web3Auth dashboard
+  const verifier = 'haven-verifier' // Your verifier name from Web3Auth dashboard
   
   await web3auth.connect({
     verifier,
@@ -344,7 +344,7 @@ const SignUpScreen = () => {
   
   return (
     <View style={{ padding: 20 }}>
-      <Text>Sign up for xUSD</Text>
+             <Text>Sign up for Haven</Text>
       
       <TouchableOpacity 
         onPress={handleGoogleLogin}
@@ -518,7 +518,7 @@ const showBackupMnemonic = async () => {
 3. **Add mnemonic backup functionality** for wallet recovery
 4. **Consider adding email/password authentication** as fallback option
 
-### Integration with xUSD App
+### Integration with Haven App
 1. **Replace existing auth flow** with this Web3Auth implementation
 2. **Use the transaction signer** for Algorand operations in your app
 3. **Store user preferences** separately from wallet data
@@ -526,7 +526,7 @@ const showBackupMnemonic = async () => {
 
 ## Next Steps
 
-1. **Set up Web3Auth dashboard** and create a verifier for xUSD app
+1. **Set up Web3Auth dashboard** and create a verifier for Haven app
 2. **Configure Firebase project** with Google/Apple authentication
 3. **Create Web3AuthService.js** file with the proven implementation
 4. **Build SignUpScreen component** and integrate with existing app

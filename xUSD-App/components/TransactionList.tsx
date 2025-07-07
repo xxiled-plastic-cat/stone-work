@@ -1,8 +1,8 @@
-import React from 'react';
-import { ScrollView } from 'react-native';
-import { Box, Text } from '../components';
-import { TransactionItem } from './TransactionItem';
-import { ThemeName } from '../theme';
+import React from "react";
+import { ScrollView } from "react-native";
+import { Box, Text } from "../components";
+import { TransactionItem } from "./TransactionItem";
+import { ThemeName } from "../theme";
 
 interface Transaction {
   id: string;
@@ -20,17 +20,8 @@ export const TransactionList: React.FC<TransactionListProps> = ({
   currentTheme,
 }) => {
   return (
-    <Box flex={1} paddingHorizontal="m" paddingBottom="s">
-      <Text 
-        variant="subheader" 
-        color="headerText" 
-        marginBottom="m"
-        style={{ fontSize: 18, fontWeight: '600' }}
-      >
-        Transaction History
-      </Text>
-      
-      <ScrollView 
+    <Box flex={1} paddingHorizontal="m" paddingBottom="s" marginTop={"l"}>
+      <ScrollView
         showsVerticalScrollIndicator={false}
         style={{ flex: 1 }}
         contentContainerStyle={{ paddingBottom: 80, paddingHorizontal: 8 }}
@@ -46,4 +37,4 @@ export const TransactionList: React.FC<TransactionListProps> = ({
       </ScrollView>
     </Box>
   );
-}; 
+};
