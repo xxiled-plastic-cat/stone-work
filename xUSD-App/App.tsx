@@ -33,19 +33,46 @@ export default function App() {
     Montserrat_400Regular,
   });
 
+  // Initialize Web3Auth on app startup
+  useEffect(() => {
+    const initializeAuth = async () => {
+      try {
+        await authService.initialize();
+      } catch (error) {
+        console.error('Failed to initialize auth services:', error);
+      }
+    };
+    
+    initializeAuth();
+  }, []);
+
   // Listen for authentication state changes
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
       if (firebaseUser) {
-        // User is signed in, create our AuthUser object
-        const authUser: AuthUser = {
-          uid: firebaseUser.uid,
-          email: firebaseUser.email,
-          displayName: firebaseUser.displayName || firebaseUser.email?.split('@')[0] || 'User',
-          provider: 'email',
-          algorandAddress: `ALGO${firebaseUser.uid.substring(0, 8).toUpperCase()}${Math.random().toString(36).substring(2, 10).toUpperCase()}`,
-        };
-        setUser(authUser);
+        try {
+          // Generate Algorand wallet for the user
+          const algorandAddress = await authService.generateAlgorandWallet?.(firebaseUser);
+          // User is signed in, create our AuthUser object
+          const authUser: AuthUser = {
+            uid: firebaseUser.uid,
+            email: firebaseUser.email,
+            displayName: firebaseUser.displayName || firebaseUser.email?.split('@')[0] || 'User',
+            provider: 'email',
+            algorandAddress,
+          };
+          setUser(authUser);
+        } catch (error) {
+          console.error('Failed to generate Algorand wallet:', error);
+          // Still set user even if wallet generation fails
+          const authUser: AuthUser = {
+            uid: firebaseUser.uid,
+            email: firebaseUser.email,
+            displayName: firebaseUser.displayName || firebaseUser.email?.split('@')[0] || 'User',
+            provider: 'email',
+          };
+          setUser(authUser);
+        }
       } else {
         // User is signed out
         setUser(null);
@@ -67,9 +94,13 @@ export default function App() {
 
   const handleSignIn = async (provider: 'google' | 'apple') => {
     try {
-      // TODO: Implement actual Web3Auth integration for social providers
-      console.log(`Signing in with ${provider}...`);
-      throw new Error(`${provider} sign-in not implemented yet. Please use email/password for now.`);
+      if (provider === 'google') {
+        const authUser = await authService.signInWithGoogle();
+        console.log('Google sign-in successful:', authUser.email);
+      } else if (provider === 'apple') {
+        const authUser = await authService.signInWithApple();
+        console.log('Apple sign-in successful:', authUser.email);
+      }
     } catch (error) {
       console.error('Sign in failed:', error);
       throw error;
