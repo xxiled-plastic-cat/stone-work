@@ -12,7 +12,7 @@ import {
     getAlgorandAddressFromWeb3Auth,
     disconnectWeb3Auth,
     isWeb3AuthConnected 
-  } from './web3AuthService';
+  } from './Web3AuthService';
   
   export interface AuthUser {
     uid: string;
